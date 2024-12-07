@@ -1,3 +1,9 @@
+import os
+
+# Configurações do ambiente para o Tesseract
+os.environ["PATH"] += r";C:\Program Files\Tesseract-OCR"
+os.environ["TESSDATA_PREFIX"] = r"C:\Program Files\Tesseract-OCR"
+
 import time
 import pyautogui
 import pygetwindow as gw
